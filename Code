@@ -1,0 +1,16 @@
+class UPI:
+    def pay(self):
+        print("Payment completed using UPI")
+
+class CreditCard:
+    def pay(self):
+        print("Payment completed using Credit Card")
+
+class NetBanking:
+    def pay(self):
+        print("Payment completed using Net Banking")
+
+payments = [UPI(), CreditCard(), NetBanking()]
+
+for payment in payments:
+    payment.pay()
